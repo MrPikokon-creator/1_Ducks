@@ -5,10 +5,11 @@ using DucksPattern.Ducks;
 
 namespace Ducks
 {
-    class Program
+    public class Program
     {
-        static void Main()
+        public static void Main()
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
             string duckID = string.Empty; // id уточки, выбираемый пользователем
             while (!(new List<string> { "1", "2", "3", "4" }).Contains(duckID))
             {
